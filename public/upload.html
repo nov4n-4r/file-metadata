@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload</title>
+</head>
+<body style="overflow: hidden;">
+    <form
+    style="display: flex; flex-direction: column; height: 80vh; width: 100vw; justify-content: center; align-items: center; gap: 10px;" 
+    action="/api/fileanalyse" method="POST" enctype="multipart/form-data">
+        <h1>File metadata</h1>
+        <label for="input">Upload file</label>
+        <input type="file" name="upfile" />
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
